@@ -116,6 +116,10 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  experimental: {
+    // Suppress SWC native bindings warning on platforms without native bindings
+    swcDiagnostics: false,
+  },
 };
 
 export default nextConfig;
